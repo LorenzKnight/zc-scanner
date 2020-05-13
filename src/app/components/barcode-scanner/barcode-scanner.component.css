@@ -1,0 +1,25 @@
+
+#interactive {
+  max-width: 100%;
+  zoom: 35% !important;
+}
+
+canvas, video {
+  width: 100%; 
+  margin: 0 auto;
+}
+
+canvas.landscapeCamera, video.landscapeCamera {
+  margin-left: -1280px
+}
+
+canvas.portraitCamera, video.portraitCamera {
+  margin-top: -1280px;
+  margin: 0 auto;
+}
+canvas.drawingBuffer {
+  position: absolute;
+  top: 115px;
+  left: 0;
+  width: 100%;
+}

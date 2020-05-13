@@ -1,0 +1,23 @@
+<div class="" style="background-color:goldenrod; width:100%; position: absolute; left:0; bottom: 0; z-index: 1;">
+  <form [formGroup]="fg">
+    <div style="width: 100%;">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr style="background-color: lightcoral;">
+            <td width="100%" valign="middle" align="center">
+              <input class="" formControlName="barcode" id="barcode" name="barcode" matInput placeholder="12-34567-89123-4" showMaskTyped="true" mask="00-00000-00000-0" data-test-id="imeiInput"> <button type="submit" mat-button (click)="add()" data-test-id="addImeiButton">Add</button>
+            </td>
+          </tr>
+          <tr>
+            <td width="100%" valign="middle" align="center">
+              <mat-error *ngIf="hasError('barcode', 'required')">
+                Barcode value is required
+              </mat-error>
+              <mat-error *ngIf="hasError('barcode', 'minlength') || hasError('barcode', 'maxlength')">
+                Bar code must be exactly 13 digits
+              </mat-error>
+            </td>
+          </tr>
+        </table>
+    </div>
+  </form>
+</div>

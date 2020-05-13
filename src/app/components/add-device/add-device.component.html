@@ -1,0 +1,111 @@
+
+<form [formGroup]="fg" clasS="h-100">
+  <div class="text_position2" style="display:flex; background-color:#dfe7ee;">
+    <div class="reinfo"><a class="btn os-btn-link" routerLink="/" data-test-id="backLink">Back</a></div>
+    <div class="reinfo"><h4>Add new</h4></div>
+    <div class="reinfo"><a class="btn os-btn-link" (click)="save()">Save</a></div>
+  </div>
+  <div style="background-color:#3d4655;">
+    <div class="flay_content">
+        <div class="content2" style="padding:0 20px;">
+            <table class="table-l" border="0" cellspacing="0" cellpadding="0">
+              <tr height="10">
+                <td colspan="2" valign="middle" align="left" style="color:#02aee5; font-size:15px;">Device</td>
+              </tr>
+              <tr height="50">
+                <td colspan="2" valign="middle" align="left">
+                  <mat-form-field class="w-100 mt-2 p-3">
+                    <input matInput placeholder="Smart phones" disabled >
+                  </mat-form-field>
+                </td>
+              </tr>
+              <tr height="10">
+                <td colspan="2" valign="middle" align="left" style="color:#02aee5; font-size:15px;">Model</td>
+              </tr>
+              <tr height="50">
+                <td colspan="2" valign="middle" align="left">
+                  <select class="scan_form" formControlName="model" data-test-id="modelSelect" required>
+                      <option [value]="" disabled>Choose model</option>
+                      <option *ngFor="let model of models" [value]="model.name">{{model.name}}</option>
+                  </select>
+                </td>
+              </tr>
+              <tr height="10">
+                <td width="50%" valign="middle" align="left" style="color:#02aee5; font-size:15px;">Acqustion date</td>
+                <td width="50%" valign="middle" align="left" style="color:#02aee5; font-size:15px; padding-left:30px;">Expiry date</td>
+              </tr>
+              <tr height="50">
+                <td width="50%" valign="middle" align="left">
+                  <mat-form-field style="width: 120px; color:#999; flex: auto;">
+                    <input matInput [matDatepicker]="start" formControlName="start" [disabled]="true" [readonly]="true" data-test-id="startDate">
+                    <mat-datepicker-toggle matSuffix [for]="start"></mat-datepicker-toggle>
+                    <mat-datepicker #start></mat-datepicker>
+                  </mat-form-field>
+                </td>
+                <td width="50%" valign="middle" align="left" style="padding-left:30px;">
+                  <mat-form-field style="width: 120px; color: #999; flex: auto;">
+                    <input matInput [matDatepicker]="end" formControlName="end" [disabled]="true" [readonly]="true" data-test-id="endDate">
+                    <mat-datepicker-toggle matSuffix [for]="end"></mat-datepicker-toggle>
+                    <mat-datepicker #end></mat-datepicker>
+                  </mat-form-field>
+                </td>
+              </tr>
+            </table>
+        </div>
+          <div class="content3">
+            <div class="row">
+              <div class="col-4">
+                <hr/>
+              </div>
+            </div>
+            <a routerLink="/devices">
+              <table class="table" border="0" cellspacing="0" cellpadding="0">
+                <tr height="40">
+                  <td width="80%" valign="middle" align="left" style="padding-left:20px;"><h6>Scanned values</h6></td>
+                  <td width="20%" valign="middle" align="center">{{ devicesService.getDevices().length }}</td>
+                </tr>
+              </table>
+            </a>
+          </div>
+
+
+        <div class="footer2">
+          <div class="intro_buton" style="padding: 110px 0 0; z-index: 1;">
+              <small><button class="lbtn-link" [disabled]="isScanningEnabled()" routerLink="/devices" data-test-id="addManualButton">Add Manual</button></small>
+          </div>
+          <div class="intro_buton">
+              <button class="btn btn-link" [disabled]="isScanningEnabled()" routerLink="/scanner" data-test-id="scanButton"><img class="text-dark" src="/assets/img/scanText.svg" /></button>
+          </div>
+          <div class="intro_buton">
+
+          </div>
+        </div>
+  </div>
+  <!-- 
+    <div class="title row h-20 w-100">
+      <div class="col-12">
+        <mat-form-field class="w-100">
+          <input formControlName="barcode" id="barcode" name="barcode" matInput placeholder="Add manual" (keyup.enter)="onEnter()" showMaskTyped="true" mask="00-000000-000000-0">
+          <mat-error *ngIf="hasError('barcode', 'required')">
+            Barcode value is required
+          </mat-error>
+          <mat-error *ngIf="hasError('barcode', 'minlength') || hasError('barcode', 'maxlength')">
+            Bar code must be exactly 13 digits
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row h-30 w-100">
+      <div class="text-center col-12">
+        <a class="btn btn-lg btn-primary" [ngClass]="isScanningEnabled()" aria-disabled="true" (click)="openDialog()">Scan</a>
+      </div>
+      <div class="col-12" *ngIf="barcodes.length">
+        <h5>Scanned values</h5>
+        <mat-list dense>
+          <mat-list-item *ngFor="let scanned of barcodes" >{{scanned}}</mat-list-item>
+        </mat-list>
+      </div>
+    </div>
+    -->
+</div>
+</form>

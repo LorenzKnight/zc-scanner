@@ -1,0 +1,17 @@
+[req]
+distinguished_name = req_distinguished_name
+req_extensions = v3_req
+prompt = no
+[req_distinguished_name]
+C = GB
+ST = London
+L = London
+O = My Organisation
+OU = My Organisational Unit
+emailAddress = email@domain.com
+CN = localhost
+[v3_req]
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = localhost
+DNS.2 = 172.27.3.237

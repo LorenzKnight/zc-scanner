@@ -1,0 +1,9 @@
+{
+  "/api":
+  {
+    "target": "https://onsiteapp-master.digitalgarage.cevt.se/api",
+    "secure": false,
+    "logLevel": "debug"
+  },
+  "logLevel": "debug"
+}

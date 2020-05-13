@@ -1,0 +1,44 @@
+<div class="text_position2" style="display:flex;">
+    <div class="reinfo"></div>
+    <div class="reinfo"><h4>Scan</h4></div>
+    <div class="reinfo"><a class="btn os-btn-link" routerLink="/add">Done</a></div>
+ </div>
+
+<div class="content4">
+  <div class="row">
+    <div class="col-4">
+      <hr/>
+    </div>
+  </div>
+
+  <table class="table2" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="90%" valign="middle" align="left"><h5>Scanned values</h5></td>
+      <td width="10%" valign="middle" align="center" data-test-id="numberOfScannedBarcodes">{{ numberOfScannedBarcodes() }}</td>
+    </tr>
+    <tr height="40" configureTestingModule *ngFor="let scanned of devices.getDevices()" >
+      <td width="90%" valign="middle" align="left">
+        <p data-test-id="scannedDevice">
+          {{scanned}}
+        </p>
+      </td>
+      <td width="10%" valign="middle" align="center">
+        <p clsas="float-right col-3">
+          <img (click)="remove(scanned)" src="/assets/img/DELETE.svg" [attr.data-test-id]="scanned" />
+        </p>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="footer2">
+  <div class="intro_buton" style="padding: 110px 0 0; z-index: 1;">
+    <a (click)="openDialog()" data-test-id="addManualButton"><small>Add Manual</small></a>
+  </div>
+  <div class="intro_buton">
+    <a aria-disabled="true" routerLink="/scanner"><img class="text-dark" src="/assets/img/scanMore.svg" /></a>
+  </div>
+  <div class="intro_buton">
+  </div>
+</div>

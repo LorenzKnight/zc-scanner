@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54.545" height="86.992" viewBox="0 0 54.545 86.992">
+  <g id="edit" transform="translate(-168.5 -672.008)">
+    <text id="Edit-2" data-name="Edit" transform="translate(171 754)" fill="#fff" font-size="20" font-family="Siri-Regular, Siri"><tspan x="0" y="0">Edit</tspan></text>
+    <g id="edit-3" data-name="edit" transform="translate(139.68 670.74)">
+      <g id="Group_6" data-name="Group 6" transform="translate(30.32 2.767)">
+        <path id="Path_19" data-name="Path 19" d="M34.511,38.283l7.318-1,27.7-26.476a4.11,4.11,0,0,0,0-5.992,4.592,4.592,0,0,0-6.272,0L35.553,31.293Z" transform="translate(-17.781 -0.339)" fill="#0eb2e6"/>
+        <path id="Path_20" data-name="Path 20" d="M65.209,35.182V50.543H30.32V2.767H65.209V12.4" transform="translate(-30.32 -2.767)" fill="none" stroke="#0eb2e6" stroke-miterlimit="10" stroke-width="3"/>
+      </g>
+      <rect id="Rectangle_26" data-name="Rectangle 26" width="19.527" height="0.727" transform="translate(38.001 14.38)" fill="#0eb2e6" stroke="#0eb2e6" stroke-width="1"/>
+      <rect id="Rectangle_27" data-name="Rectangle 27" width="15.33" height="0.727" transform="translate(38.001 22.065)" fill="#0eb2e6" stroke="#0eb2e6" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

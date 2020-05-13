@@ -1,0 +1,254 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+  html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  hr {
+    border-top: 2px solid #02aee5;
+  }
+  .header {
+    width: 100%;
+    background-color: #dfe7ee;
+    display: flex;
+    color: rgb(32, 42, 83);
+  }
+  .head1 {
+    flex: 1;
+    height: 100%;
+    float: left;
+  }
+  .head2 {
+    flex: 1;
+    height: 100%;
+    padding:15px 0 5px;
+    float: left;
+    text-align: center;
+  }
+  .head3 {
+    flex: 1;
+    height: 100%;
+    padding: 25px 0 5px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+  }
+  .banner {
+    height: 200px;
+    background-image: url("/assets/skyscrapers.jpeg");
+    position: relative;
+    background-repeat: no-repeat;
+    color: #fff;
+    overflow: hidden;
+  }
+  .banner img {
+    position: absolute;
+    left:-400px;
+    top:-100px;
+  }
+  .text_position {
+    width: 100%;
+    padding: 25% 0;
+    text-align: center;
+    font-weight: 100;
+    position: absolute;
+  }
+  .text_position2 {
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+  }
+  .content {
+    width: 100%;
+    height: 165px;
+  }
+  .reinfo {
+    flex: 1;
+    padding:0;
+  }
+  .content_intro {
+    width: 100%;
+    overflow: auto;
+  }
+  .cam {
+    width: 100%;
+    height: 85%;
+    background-color: #FFF;
+    overflow: hidden;
+  }
+  .cam-view {
+    width: 100%;
+    height: 100%;
+  }
+  .table {
+    width: 100%;
+  }
+  .footer_ind {
+    width: 100%;
+    height: 140px;
+    background-color:#3d4655; 
+    display:flex;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 20%);
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 20%);
+    -o-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 20%);
+    -ms-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 20%);
+    position: absolute;
+    bottom: 0;
+  }
+  .footer {
+    width: 100%;
+    margin: 0;
+    background-color: #dfe7ee;
+    position: absolute;
+    bottom:0;
+  }
+  .footer2 {
+    width: 100%;
+    background-color: #FFF;
+    margin: 0 0;
+    display: flex;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 20%);
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 20%);
+    -o-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 20%);
+    -ms-clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 0% 20%);
+    position: absolute;
+    bottom:0;
+}
+.intro_buton {
+  padding: 40px 0 0;
+  /* background-color: blueviolet; */
+  text-align: center;
+  float: left;
+  flex: 1;
+}
+.intro_buton a{
+  cursor: pointer;
+}
+.foot1 {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.text-manual {
+  width:99%;
+  background-color: #FFF;
+  border-top: 1px solid #dfe7ee;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  z-index: 1;
+}
+.textf {
+  width: 75%;
+  font-size: 24px;
+  border-radius: 0px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #02aee5;
+  margin: 0;
+}
+.botton_in {
+  border: 0;
+  margin: 5px;
+  padding: 8px 15px;
+  background-color: #02aee5;
+  color: #FFF;
+}
+.cdk-overlay-container {
+  height: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.os-btn-link {
+  font-weight: 400;
+    color: ##21252;
+    text-decoration: none;
+}
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.h-10 {
+  height: 10% !important;
+}
+.h-20 {
+  height: 20% !important;
+}
+.h-30 {
+  height: 30% !important;
+}
+.h-35 {
+  height: 35% !important;
+}
+.h-40 {
+  height: 40% !important;
+}
+
+.h-45 {
+  height: 45% !important;
+}
+
+.h-55 {
+  height: 55% !important;
+}
+
+.h-60 {
+  height: 60% !important;
+}
+
+
+.title {
+  padding-top: 5%;
+}
+
+.cevt-light-grey {
+  background-color: #dfe7ee;
+}
+
+.cevt-dark-grey {
+  background-color: #3d4655;
+}
+
+.mat-form-field-label {
+  color: #eee !important;
+}

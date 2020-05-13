@@ -1,0 +1,25 @@
+
+<div class="text_position2" style="display:flex; background-color:#dfe7ee;">
+  <div class="reinfo" style="z-index: 1;"><a class="btn os-btn-link" routerLink="/add" data-test-id="backLink">Cancel</a></div>
+  <div class="reinfo"><h4>Scaning</h4></div>
+  <div class="reinfo"></div>
+</div>
+
+<div class="cam">
+  <div id="interactive" class="viewport">
+    <video #interactive src=""></video>
+    <canvas class="drawingBuffer"></canvas>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <table class="table" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="80%" valign="middle" align="left" style="padding-left:20px;"><h6>Scanned values</h6></td>
+      <td width="20%" valign="middle" align="center">
+        <div data-test-id="scannedBarcodes">{{ numberOfScannedBarcodes() }}</div>
+      </td>
+    </tr>
+  </table>
+</footer>

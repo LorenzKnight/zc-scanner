@@ -1,0 +1,15 @@
+.dummy-bg {
+  background-image: url("/assets/skyscrapers.jpeg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #dfe7ee;
+}
+
+.text-white {
+  color: #fff;
+}
+
+
+.diagonal {
+  transform: skew(0deg, -2deg);
+}
